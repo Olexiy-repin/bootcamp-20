@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.logotype {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.mb70 {
+  margin-bottom: 70px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.link {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+}
+
+/* POPULAR */
+.popular {
+  padding-top: 144px;
+  padding-bottom: 80px;
+}
+
+.popular__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.popular__list-item {
+  text-align: center;
+}
+
+.popular__img {
+  margin: 0 auto;
+}
+
+.popular__rating {
+  display: flex;
+  justify-content: center;
+}
+
+.popular__rating-star {
+  display: block;
+}
+
+.popular__rating-star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.popular__rating-star::before {
+  display: block;
+  /* width: 9px;
+  height: 9px; */
+  content: url("../images/star.png");
+}
+
+.popular__img-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.popular__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .list {
+    justify-content: flex-end;
+  }
+
+  .logotype {
+    margin: 0;
+  }
+
+  .pd-md-40 {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .popular__title {
+    font-size: 36px;
+  }
+}
