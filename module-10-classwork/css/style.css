@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+body {
+  height: 100vh;
+}
+
+.banner {
+  min-height: 600px;
+  background-image: url("../images/car.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 
+  96dpi - 1x
+  144dpi - 1.5x
+  192dpi - 2x
+*/
+
+@media (min-resolution: 192dpi) {
+  .banner {
+    background-image: url("../images/car@2x.jpg");
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.footer {
+  background-color: slategray;
+  padding: 30px 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.social-list__item-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  /* background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__item-link:hover .social-list__item-svg {
+  fill: yellow;
+  stroke: blue;
+}
+
+.social-list__item-svg {
+  width: 32px;
+  height: 32px;
+  fill: blue;
+  stroke: yellow;
+  stroke-width: 2px;
+  transition: all 0.5s linear;
+}
+
+/* .social-list__item-link_twitter {
+  background-image: url("../images/twitter.svg");
+}
+
+.social-list__item-link_telegram {
+  background-image: url("../images/telegram.svg");
+} */
+
+/* 
+block__element_modifier
+block__element--modifier
+*/
+
+/* 
+block_modifier
+block__element_modifier
+*/
