@@ -1,0 +1,92 @@
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../images/header/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+  padding-top: 38px;
+  padding-bottom: 260px;
+
+  &__title {
+    @include font($main-font, 500, 48px, inherit);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  &__btn {
+    display: block;
+    width: 176px;
+    height: 46px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url('../images/header/bg@2x.jpg');
+  }
+}
+
+.navigation {
+  margin-bottom: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    &-item:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &-link {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      letter-spacing: 0.35px;
+    }
+  }
+}
+
+.logotype {
+  @include font($main-font, 700, 24px, 36px);
+  color: #fff;
+}
